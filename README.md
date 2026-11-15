@@ -15,7 +15,8 @@ Working with a five-person team on a property platform spanning a **Nuxt 4 / Vue
 
 - Stack: **TypeScript, Nuxt, Vue, Flutter, Dart, Firebase, Firestore, GitHub Actions**
 - Product: [cbienla.fr](https://cbienla.fr)
-- Source code: private; a public technical case study can be shared without exposing team or business data
+- Case study: **[Read the CBienLà technical overview](projects/cbienla.md)**
+- Source code: private; team and product information remain protected
 
 ### AIOS — Local-first AI agent system
 *Personal engineering project · In development*
@@ -23,6 +24,7 @@ Working with a five-person team on a property platform spanning a **Nuxt 4 / Vue
 Designing a Windows-oriented system for local AI execution with **supervised task orchestration, permission boundaries, traceable runs and testable runtime components**. The project explores controlled tool execution and integration with local models through Ollama.
 
 - Areas: **Python, Rust, Tauri, Vue, Ollama, testing, security boundaries**
+- Case study: **[Read the AIOS technical overview](projects/aios.md)**
 - Source code: private while the security and release model are under review
 
 ### Tabletop RPG companion — Unity / C#
