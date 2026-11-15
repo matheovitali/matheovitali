@@ -4,7 +4,9 @@
 
 I'm a France-based developer with professional experience building business applications with Microsoft's Power Platform, SharePoint and Dataverse. I also work on web/mobile products and local AI-agent systems, with a focus on practical architecture, reliability and delivery.
 
-I'm open to **remote software engineering roles from France**, including international teams.
+I'm open to **remote software engineering roles from France** (permanent or fixed-term contracts), including international teams.
+
+**Connect:** [LinkedIn](https://www.linkedin.com/in/matheo-vitali-bbba63135/) · [Technical portfolio](projects/cbienla.md) · [AI agent engineering](projects/aios.md)
 
 ## Selected work
 
