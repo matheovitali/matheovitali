@@ -1,16 +1,61 @@
-## Hi there 👋
+# Hi, I'm Mathéo Vitali 👋
 
-<!--
-**matheovitali/matheovitali** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Software developer | Full-stack applications, automation & AI systems**
 
-Here are some ideas to get you started:
+I'm a France-based developer with professional experience building business applications with Microsoft's Power Platform, SharePoint and Dataverse. I also work on web/mobile products and local AI-agent systems, with a focus on practical architecture, reliability and delivery.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I'm open to **remote software engineering roles from France**, including international teams.
+
+## Selected work
+
+### CBienLà — Real estate web & mobile platform
+*A team project · Production-oriented product development*
+
+Working with a five-person team on a property platform spanning a **Nuxt 4 / Vue 3 / TypeScript** web app, a **Flutter** mobile app and **Firebase** services. Areas of work include backend workflows, property-data ingestion, lead management, integrations, CI/CD and tooling.
+
+- Stack: **TypeScript, Nuxt, Vue, Flutter, Dart, Firebase, Firestore, GitHub Actions**
+- Product: [cbienla.fr](https://cbienla.fr)
+- Source code: private; a public technical case study can be shared without exposing team or business data
+
+### AIOS — Local-first AI agent system
+*Personal engineering project · In development*
+
+Designing a Windows-oriented system for local AI execution with **supervised task orchestration, permission boundaries, traceable runs and testable runtime components**. The project explores controlled tool execution and integration with local models through Ollama.
+
+- Areas: **Python, Rust, Tauri, Vue, Ollama, testing, security boundaries**
+- Source code: private while the security and release model are under review
+
+### Tabletop RPG companion — Unity / C#
+*Personal project · In development*
+
+Building a 2D companion application with **Unity and C#**, exploring multiplayer synchronization, persistent data and automated tests.
+
+- Stack: **Unity, C#, Netcode for GameObjects, Firebase / Firestore, NUnit**
+- The current public [Projet40K repository](https://github.com/matheovitali/Projet40K) contains graphics only, not the application source
+
+### Stained Glass — VR/MR research project
+*Epitech team project*
+
+Contributed to a **Rust-based VR/MR prototype** for Meta Quest in a ten-person team, with a focus on hand/wrist interactions and spatial UI behavior. Project material is not published here pending contributor and asset-rights review.
+
+## Professional background
+
+**Microsoft ecosystem developer — AIR CLOUD** (Dec 2022 – Aug 2025)  
+Developed business tools and workflows using **Power Platform, SharePoint, Dataverse and Power Automate**, including CRM and operational-process solutions in a small delivery team.
+
+**Education:** MSc in Artificial Intelligence — Epitech.
+
+## Technologies
+
+- **Applications:** TypeScript, Vue, Nuxt, Flutter, Dart, C#, Unity
+- **Automation & business systems:** Power Platform, Power Automate, SharePoint, Dataverse
+- **Backend & data:** Firebase, Firestore, Python
+- **Systems & experimental work:** Rust, local AI tooling, Ollama
+- **Engineering workflow:** Git, GitHub Actions, automated testing, CI/CD
+
+## Earlier public projects
+
+- [My_defender](https://github.com/matheovitali/My_defender) — 2021 academic tower-defense project built with C and CSFML
+- [site-bdd-pixellabs](https://github.com/matheovitali/site-bdd-pixellabs) — 2021 Flutter project for CSV/data workflows with Firestore
+
+**About the repositories:** Some of my recent work is private because it involves collaborators, product code or security-sensitive architecture. Public documentation is intended to explain the engineering work without misrepresenting code ownership or sharing restricted material.
