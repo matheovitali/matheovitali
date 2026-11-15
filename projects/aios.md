@@ -39,6 +39,23 @@ These are architectural responsibilities rather than a promise that every subsys
 
 **Testability.** Using controlled test providers and bounded execution allows policy and runtime behavior to be exercised without assuming the model is always available or predictable.
 
+## Simplified execution model
+
+This diagram expresses the **intended high-level separation of responsibilities**. It is not a detailed implementation map or proof that every integration is complete.
+
+```mermaid
+flowchart LR
+  Person[Human approval] --> Desktop[Desktop interface]
+  Desktop --> Control[Policy and state checks]
+  Control --> Runtime[Supervised task runtime]
+  Runtime --> Model[Local model / Ollama]
+  Runtime --> Result[Recorded task outcome]
+```
+
+### Public evidence and media
+
+The implementation, test suite and runtime demonstrations are currently private. A safe future portfolio demo would use synthetic inputs, expose no credentials and clearly distinguish a simulated run from a real local-model run. **No public executable or video is linked yet.**
+
 ## What this case study demonstrates
 
 - Designing **permission-bounded agent workflows**
