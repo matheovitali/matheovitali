@@ -31,6 +31,25 @@ My involvement has included full-stack engineering and automation across the pro
 
 **Delivery and maintenance.** Engineering includes CI/CD, debugging, validation and incremental changes in an active multi-contributor repository.
 
+## Simplified system view
+
+This is a **portfolio-level illustration**, not an exact diagram of internal infrastructure or security controls.
+
+```mermaid
+flowchart LR
+  Web[Nuxt / Vue web client] --> Services[Firebase-backed services]
+  Mobile[Flutter mobile client] --> Services
+  Services --> Store[(Cloud Firestore)]
+  Feed[External property feeds] --> Import[Import and normalization workflows]
+  Import --> Store
+```
+
+### Public evidence and media
+
+- **Live public product:** [cbienla.fr](https://cbienla.fr), featuring property search, listings and professional discovery
+- **Private work:** source history, back-office flows and integration code are not published here
+- **Screenshots:** a public-page screenshot or redacted demo could be added after confirming rights and removing personal or business data; no such screenshot is included at present
+
 ## What this case study demonstrates
 
 - Working with an interconnected **web + mobile + serverless** codebase
