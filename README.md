@@ -33,12 +33,16 @@ Designing a Windows-oriented system for local AI execution with **supervised tas
 Building a 2D companion application with **Unity and C#**, exploring multiplayer synchronization, persistent data and automated tests.
 
 - Stack: **Unity, C#, Netcode for GameObjects, Firebase / Firestore, NUnit**
+- Case study: **[Read the Unity / C# technical overview](projects/unity-rpg-companion.md)**
 - The current public [Projet40K repository](https://github.com/matheovitali/Projet40K) contains graphics only, not the application source
 
 ### Stained Glass — VR/MR research project
 *Epitech team project*
 
-Contributed to a **Rust-based VR/MR prototype** for Meta Quest in a ten-person team, with a focus on hand/wrist interactions and spatial UI behavior. Project material is not published here pending contributor and asset-rights review.
+Contributed to a **Rust-based VR/MR prototype** for Meta Quest in a ten-person team, with a focus on hand/wrist interactions and spatial UI behavior.
+
+- Case study: **[Read the Stained Glass technical overview](projects/stained-glass.md)**
+- Project code and media are not published pending contributor and asset-rights review.
 
 ## Professional background
 
