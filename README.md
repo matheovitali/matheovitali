@@ -13,12 +13,12 @@ I'm open to **remote software engineering roles from France** (permanent or fixe
 ### CBienLà — Real estate web & mobile platform
 *A team project · Production-oriented product development*
 
-Working with a five-person team on a property platform spanning a **Nuxt 4 / Vue 3 / TypeScript** web app, a **Flutter** mobile app and **Firebase** services. Areas of work include backend workflows, property-data ingestion, lead management, integrations, CI/CD and tooling.
+Working in a five-person team on a real-estate platform built with **Nuxt / TypeScript, Flutter and Firebase**, with contributions across data consistency, administrative workflows and automated testing.
 
-- Stack: **TypeScript, Nuxt, Vue, Flutter, Dart, Firebase, Firestore, GitHub Actions**
-- Product: [cbienla.fr](https://cbienla.fr)
-- Case study: **[Read the CBienLà technical overview](projects/cbienla.md)**
-- Source code: private; team and product information remain protected
+- **Data quality:** kept leading-zero postal codes consistent across web, mobile and stored records
+- **Business logic:** supported controlled correction of incomplete administrative contact requests
+- **Quality:** helped add isolated Playwright/Firebase E2E checks to pull-request CI
+- **[Read the technical case study](projects/cbienla.md)** · [Live product](https://cbienla.fr/) · source code private
 
 ### AIOS — Local-first AI agent system
 *Personal engineering project · In development*
