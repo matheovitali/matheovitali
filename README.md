@@ -11,9 +11,11 @@ I'm open to **remote software engineering roles from France** (permanent or fixe
 ## Selected work
 
 ### CBienLà — Real-estate web & mobile platform
-*Team product · Software development*
+*Co-founder & Full-Stack Developer · Since October 2025 · Five-person team*
 
-Contributing to a French real-estate application as part of a five-person team. The product is publicly accessible, while the source code and internal implementation remain private.
+I co-founded CBienLà, a French web and mobile real-estate platform. As part of a five-person team, I contribute to its development across the Vue/Nuxt frontend, Flutter mobile application and Firebase backend.
+
+My work includes product features, API integrations, data automation and deployment workflows. The product is publicly accessible, while its source code remains private.
 
 - **[Product overview](projects/cbienla.md)** · [Visit CBienLà](https://cbienla.fr/)
 
