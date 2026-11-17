@@ -44,11 +44,24 @@ flowchart LR
   Import --> Store
 ```
 
-### Public evidence and media
+### Explore the live product
 
-- **Live public product:** [cbienla.fr](https://cbienla.fr), featuring property search, listings and professional discovery
-- **Private work:** source history, back-office flows and integration code are not published here
-- **Screenshots:** a public-page screenshot or redacted demo could be added after confirming rights and removing personal or business data; no such screenshot is included at present
+These links lead to **real public pages** of the product rather than mockups or screenshots. They illustrate the current user-facing experience; they do **not** establish which individual teammate implemented each feature.
+
+| Public page | What to look for |
+| --- | --- |
+| [Homepage and property search](https://cbienla.fr/) | Search entry point, listings and property discovery |
+| [Browse properties by region](https://cbienla.fr/immobilier) | Hierarchical regional discovery and navigation |
+| [Professional directory](https://cbienla.fr/professionals) | Search and category filters for real-estate professionals |
+| [About the platform](https://cbienla.fr/qui-sommes-nous) | Public product and team context |
+
+### Screenshots and supporting media
+
+**No screenshots are included yet.** The product website contains third-party listings, photos, personal profile information and brand assets, which must not automatically be republished in a developer portfolio. Any future media must be authorized by the relevant rights holders, based on real app screens, and checked for personal or sensitive content.
+
+A suitable approved set would show (1) the homepage search UI, (2) a regional-discovery page and (3) the directory filters **with visible personal information and copyrighted listing images excluded or appropriately cleared**.
+
+**Private work:** source history, back-office flows and integration code are intentionally not published here.
 
 ## What this case study demonstrates
 
