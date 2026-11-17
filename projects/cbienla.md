@@ -14,7 +14,15 @@ The official website is the best way to see the public product today.
 
 ## Gallery
 
-Screenshots of the real application may be added here **only after approval from the project team and a review of third-party rights and personal data**. No screenshots, internal interfaces or private code are published in this portfolio.
+### Homepage
+
+![CBienLà homepage with the main property search interface](images/cbienla-accueil.png)
+
+### Property Search
+
+![CBienLà property search results with listings and a map](images/cbienla-recherche.png)
+
+*Screenshots of the public-facing product, provided for portfolio illustration. They do not include the application's private source code or internal implementation.*
 
 ## My role
 
