@@ -1,77 +1,69 @@
-# CBienLà — Real estate web and mobile platform
+# CBienLà — Real-estate platform
 
-[Back to profile](../README.md) · [Product website](https://cbienla.fr)
+[← Back to my profile](../README.md) · [Explore the live product](https://cbienla.fr/) · [Meet the team](https://cbienla.fr/qui-sommes-nous)
 
-**Team project · Full-stack product engineering · Source code private**
+**Team product · Web, mobile and backend · Source code private**
 
-## Context
+CBienLà is a French real-estate platform for property discovery and interactions with professionals. I contribute to its engineering in a five-person team, with a particular focus on data consistency, business workflows and reliable delivery.
 
-CBienLà is a real-estate platform developed with a team of five. The product brings together web and mobile experiences with shared backend services, integrations and tools for managing business workflows.
+## Three engineering contributions
 
-My involvement has included full-stack engineering and automation across the product. This is **team work, not a claim of sole ownership**.
+### 1. Keeping property data consistent across web and mobile
 
-## Technology
+**Problem.** A French postal code starting with zero could lose that zero when treated as a number, producing incorrect location data.
 
-| Layer | Technologies |
+**Work.** Contributed to aligning the Nuxt/TypeScript and Flutter/Dart data models around five-character postal-code strings, updating validation and ingestion, and accommodating historical numeric records. A staged data-cleanup path was prepared to avoid breaking older records.
+
+**Why it matters.** A small data-type choice affects search behavior, multiple clients, stored documents and rollout safety. The improvement addressed the whole data flow rather than only its display.
+
+### 2. Handling incomplete contact requests safely
+
+**Problem.** Some legitimate administrative contact requests arrive without an email address or phone number, but the application needed to preserve validation for normal public submissions.
+
+**Work.** Contributed to an admin-only workflow for handling these incomplete records, including access checks, correction history, conflict handling and compatibility with older records. The change was validated with targeted tests and browser-level scenarios.
+
+**Why it matters.** Real business requirements often need exceptions; implementing them safely requires maintaining data integrity, traceability and a clear boundary between administrative and public permissions.
+
+### 3. Detecting regressions before deployment
+
+**Problem.** A page can return successfully while failing to display the expected business content. Shared test environments also risk unintentionally interacting with live services.
+
+**Work.** Helped establish isolated Firebase emulator-based end-to-end testing with Playwright in pull-request CI, then extended coverage for property listings, published articles, FAQs and content visibility. Negative test scenarios were used to check whether the tests actually detected deliberately introduced regressions.
+
+**Evidence.** At a documented November 2026 revision, **19 of 19 end-to-end checks passed in private CI**. This is a historical result for a defined revision, not a claim that every current or production workflow is covered.
+
+## Technical context
+
+| Layer | Technology |
 | --- | --- |
 | Web | Nuxt 4, Vue 3, TypeScript |
 | Mobile | Flutter, Dart |
-| Backend | Firebase Cloud Functions, Node.js / TypeScript |
-| Data & authentication | Firebase and Cloud Firestore |
-| Delivery | GitHub Actions and automated checks |
-| Integrations | External real-estate feeds and third-party services |
-
-## Engineering areas
-
-**Multi-client consistency.** Web and Flutter clients connect to shared data and business operations. Changes need consistent behavior across platforms and clear boundaries between the interface, backend and data rules.
-
-**Data ingestion.** Integrations import and normalize external property-related information. This work entails validating incoming data, managing incomplete fields and handling differences between source formats.
-
-**Business workflows.** The platform supports operational features such as lead-management and administrative flows, requiring authorization checks and predictable state updates.
-
-**Delivery and maintenance.** Engineering includes CI/CD, debugging, validation and incremental changes in an active multi-contributor repository.
-
-## Simplified system view
-
-This is a **portfolio-level illustration**, not an exact diagram of internal infrastructure or security controls.
+| Services | Firebase Cloud Functions, Node.js / TypeScript |
+| Storage & data | Firebase, Cloud Firestore |
+| Quality & delivery | Playwright, automated tests, GitHub Actions |
+| Integrations | External property-data feeds |
 
 ```mermaid
 flowchart LR
-  Web[Nuxt / Vue web client] --> Services[Firebase-backed services]
-  Mobile[Flutter mobile client] --> Services
-  Services --> Store[(Cloud Firestore)]
-  Feed[External property feeds] --> Import[Import and normalization workflows]
-  Import --> Store
+  Web[Nuxt / Vue] --> Backend[Firebase-backed services]
+  Mobile[Flutter] --> Backend
+  Backend --> Data[(Firestore)]
+  Feeds[Property feeds] --> Import[Normalization]
+  Import --> Data
 ```
 
-### Explore the live product
+*Simplified public-facing illustration, not a detailed map of internal services or security controls.*
 
-These links lead to **real public pages** of the product rather than mockups or screenshots. They illustrate the current user-facing experience; they do **not** establish which individual teammate implemented each feature.
+## Explore the real product
 
-| Public page | What to look for |
-| --- | --- |
-| [Homepage and property search](https://cbienla.fr/) | Search entry point, listings and property discovery |
-| [Browse properties by region](https://cbienla.fr/immobilier) | Hierarchical regional discovery and navigation |
-| [Professional directory](https://cbienla.fr/professionals) | Search and category filters for real-estate professionals |
-| [About the platform](https://cbienla.fr/qui-sommes-nous) | Public product and team context |
+- [Property search and homepage](https://cbienla.fr/)
+- [Property discovery by region](https://cbienla.fr/immobilier)
+- [Professional directory](https://cbienla.fr/professionals)
 
-### Screenshots and supporting media
+These are public pages demonstrating the **team's product**, not proof that I individually built every visible feature.
 
-**No screenshots are included yet.** The product website contains third-party listings, photos, personal profile information and brand assets, which must not automatically be republished in a developer portfolio. Any future media must be authorized by the relevant rights holders, based on real app screens, and checked for personal or sensitive content.
+## Scope and confidentiality
 
-A suitable approved set would show (1) the homepage search UI, (2) a regional-discovery page and (3) the directory filters **with visible personal information and copyrighted listing images excluded or appropriately cleared**.
+This portfolio page is based on work reflected in contributions under my GitHub account in the team's private repository. It describes **my areas of contribution**, not sole authorship of the product or every code change. Private pull requests, proprietary source, internal operational details and personal/customer data are not reproduced.
 
-**Private work:** source history, back-office flows and integration code are intentionally not published here.
-
-## What this case study demonstrates
-
-- Working with an interconnected **web + mobile + serverless** codebase
-- Practical experience with TypeScript, Vue/Nuxt, Flutter and Firebase
-- Navigating complex product workflows and external data integrations
-- Collaborating within a small product team, including testing and delivery
-
-## Scope and verification
-
-The [product website](https://cbienla.fr) is a public entry point. **The private source code, client information, internal architecture specifics and operational credentials are intentionally not included.** This document is a high-level technical overview, not an independent security audit or a claim of publicly verified performance.
-
-Additional sanitized screenshots or architecture diagrams may be added after review of ownership and confidentiality constraints.
+No screenshots are included because branding, listing photos and other third-party material require a separate rights and privacy review. Public product links provide a verifiable preview in the meantime. Tests described here are development/CI results, not a certification of production behavior.
