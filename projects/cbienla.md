@@ -26,8 +26,10 @@ The official website is the best way to see the public product today.
 
 ## My role
 
-**Software developer — team contribution**
+**Co-founder & Full-Stack Developer · Since October 2025**
 
-I work on the product's development and evolution with the team. This overview intentionally does not disclose private implementation details, internal workflows, architecture or security arrangements.
+As part of a five-person team, I contribute to CBienLà's product development, including frontend features, mobile development, backend services and integrations.
 
-*This is a portfolio presentation of a collaborative product, not a claim of sole authorship or a public source-code release.*
+**Technologies:** TypeScript, Vue, Nuxt, Node.js, Firebase, Firestore, Flutter and Dart.
+
+This is a collaborative product. The source code remains private, and this overview describes my contribution without claiming sole authorship of the platform or disclosing private implementation details.
