@@ -1,70 +1,43 @@
-# AIOS — Local-first agent execution system
+# AIOS
 
-[Back to profile](../README.md)
+[Back to my profile](../README.md)
 
-**Personal engineering project · In development · Source code private**
+AIOS is a personal project about running AI-assisted tasks locally without giving a model unrestricted control of the computer.
 
-## Goal
+The main question I'm exploring is how to keep a clear boundary between what a model suggests and what the software is actually allowed to execute. A person should be able to set permissions, inspect task states and understand what happened during a run.
 
-AIOS explores a local-first system for **supervised AI-assisted tasks**. Its objective is to make agent execution understandable and controllable: the human should be able to define permissions, observe a task's state and distinguish an intended action from an action that was actually executed.
+## How I'm approaching it
 
-The project is experimental and **is not presented as a production-ready autonomous agent**.
+I'm using Python for orchestration and runtime behavior, Rust and Tauri for the native desktop boundary, Vue/TypeScript for the interface and Ollama for local model integration.
 
-## Technology and architecture
+The design separates four parts:
 
-- **Python** for orchestration and runtime-side functionality
-- **Rust / Tauri** for desktop integration and a native boundary
-- **Vue / TypeScript** for the desktop interface
-- **Ollama** for local-model integration
-- Automated tests for state transitions, policy behavior and execution boundaries
+- A desktop interface for reviewing tasks and requesting approval
+- Core state for tasks, runs and recorded outcomes
+- Policy checks that decide which actions are permitted
+- A supervised runtime that executes approved work
 
-The design separates four concerns:
-
-1. **Desktop presentation** — shows task information and requests deliberate confirmation.
-2. **Core state** — tracks tasks, runs and outcomes.
-3. **Policy checks** — govern whether a requested capability is permitted.
-4. **Supervised runtime** — performs authorized work and records the result.
-
-These are architectural responsibilities rather than a promise that every subsystem is fully shipped.
-
-## Engineering challenges
-
-**Permission before execution.** A model proposal should not grant itself authority. Execution requires explicit scope and enforceable checks outside the presentation layer.
-
-**Uncertain outcomes.** A timeout or interrupted process does not automatically mean the underlying action failed. Task and run states need to communicate uncertainty rather than report invented success.
-
-**Process supervision.** On Windows, reliably identifying and stopping child processes requires attention to process ownership and lifecycle behavior.
-
-**Local inference.** Ollama integration has been exercised with a real local-model response in development; this is a narrowly scoped proof, **not** a performance or production-readiness claim.
-
-**Testability.** Using controlled test providers and bounded execution allows policy and runtime behavior to be exercised without assuming the model is always available or predictable.
-
-## Simplified execution model
-
-This diagram expresses the **intended high-level separation of responsibilities**. It is not a detailed implementation map or proof that every integration is complete.
+This is the intended separation, not a claim that every part is production-ready.
 
 ```mermaid
 flowchart LR
-  Person[Human approval] --> Desktop[Desktop interface]
-  Desktop --> Control[Policy and state checks]
-  Control --> Runtime[Supervised task runtime]
-  Runtime --> Model[Local model / Ollama]
-  Runtime --> Result[Recorded task outcome]
+  Human[Human approval] --> UI[Desktop]
+  UI --> Core[Policy and task state]
+  Core --> Runtime[Supervised runtime]
+  Runtime --> Model[Local model]
+  Runtime --> Outcome[Recorded outcome]
 ```
 
-### Public evidence and media
+## Problems I've been working through
 
-The implementation, test suite and runtime demonstrations are currently private. A safe future portfolio demo would use synthetic inputs, expose no credentials and clearly distinguish a simulated run from a real local-model run. **No public executable or video is linked yet.**
+**Permissions.** Model output cannot grant itself new authority. The checks need to live outside the UI and outside model-generated instructions.
 
-## What this case study demonstrates
+**Uncertain results.** If an action times out, that doesn't necessarily mean it failed. The system needs to record what is known instead of guessing at an outcome.
 
-- Designing **permission-bounded agent workflows**
-- Working across Python, Rust and a TypeScript desktop UI
-- Modeling task/run state and evidence of execution
-- Applying a test-first approach to safety-sensitive runtime behavior
+**Windows process supervision.** Tracking and reliably stopping child processes has exposed edge cases in process ownership and lifecycle handling.
 
-## Current limits
+**Local models.** I've tested an Ollama-backed run with a real model response, but that's an integration check rather than evidence of production reliability.
 
-The system is in active development, with unresolved integration and lifecycle work. Internal tests and reviews are not equivalent to external certification. There is **no public source release or independently reproducible build linked here**.
+I use controlled test providers and automated tests to exercise these behaviors without depending on a model for every test.
 
-This page intentionally omits operational security details, unpublished code and machine-specific configuration. An isolated demonstration may be published after a dedicated release and security review.
+AIOS is still in development. The code and internal tests are private, and I haven't published a runnable release or demo yet. I plan to review the release and security implications before making any of that public.
