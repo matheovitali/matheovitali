@@ -1,68 +1,55 @@
-# Hi, I'm Mathéo Vitali 👋
+# Hi, I'm Mathéo
 
-**Software developer | Full-stack applications, automation & AI systems**
+I'm a software developer based in France. I spent nearly three years at AIR CLOUD building business applications and automations with Power Platform, SharePoint and Dataverse. Outside of that work, I build web and mobile products and experiment with local AI systems.
 
-I'm a France-based developer with professional experience building business applications with Microsoft's Power Platform, SharePoint and Dataverse. I also work on web/mobile products and local AI-agent systems, with a focus on practical architecture, reliability and delivery.
+I'm looking for a software development role that I can do remotely from France, ideally with a team where I can contribute across the application stack.
 
-I'm open to **remote software engineering roles from France** (permanent or fixed-term contracts), including international teams.
+[LinkedIn](https://www.linkedin.com/in/matheo-vitali-bbba63135/) · [CBienLà](https://cbienla.fr/)
 
-**Connect:** [LinkedIn](https://www.linkedin.com/in/matheo-vitali-bbba63135/) · [Technical portfolio](projects/cbienla.md) · [AI agent engineering](projects/aios.md)
+## Projects
 
-## Selected work
+### CBienLà
 
-### CBienLà — Real-estate web & mobile platform
-*Co-founder & Full-Stack Developer · Since October 2025 · Five-person team*
+I'm a co-founder and developer of [CBienLà](https://cbienla.fr/), a real-estate platform built by a team of five. Since October 2025, I've worked on features across its Nuxt/Vue frontend, Flutter mobile app and Firebase backend, along with integrations and deployment workflows.
 
-I co-founded CBienLà, a French web and mobile real-estate platform. As part of a five-person team, I contribute to its development across the Vue/Nuxt frontend, Flutter mobile application and Firebase backend.
+[More about my work on CBienLà](projects/cbienla.md)
 
-My work includes product features, API integrations, data automation and deployment workflows. The product is publicly accessible, while its source code remains private.
+### AIOS
 
-- **[Product overview](projects/cbienla.md)** · [Visit CBienLà](https://cbienla.fr/)
+AIOS is a personal project exploring how to run AI-assisted tasks locally while keeping execution under human control. I'm working on task orchestration, permission checks, process supervision and traceable results, with Python, Rust, Tauri, Vue and Ollama.
 
-### AIOS — Local-first AI agent system
-*Personal engineering project · In development*
+It's still experimental, and the source code isn't public while I review the security and release approach.
 
-Designing a Windows-oriented system for local AI execution with **supervised task orchestration, permission boundaries, traceable runs and testable runtime components**. The project explores controlled tool execution and integration with local models through Ollama.
+[Technical notes on AIOS](projects/aios.md)
 
-- Areas: **Python, Rust, Tauri, Vue, Ollama, testing, security boundaries**
-- Case study: **[Read the AIOS technical overview](projects/aios.md)**
-- Source code: private while the security and release model are under review
+### Unity tabletop companion
 
-### Tabletop RPG companion — Unity / C#
-*Personal project · In development*
+I'm building a 2D tabletop RPG companion in Unity and C#, with multiplayer state, Firestore persistence and automated tests. The [public Projet40K repository](https://github.com/matheovitali/Projet40K) currently contains artwork and UI assets, not the application code.
 
-Building a 2D companion application with **Unity and C#**, exploring multiplayer synchronization, persistent data and automated tests.
+[About the Unity project](projects/unity-rpg-companion.md)
 
-- Stack: **Unity, C#, Netcode for GameObjects, Firebase / Firestore, NUnit**
-- Case study: **[Read the Unity / C# technical overview](projects/unity-rpg-companion.md)**
-- The current public [Projet40K repository](https://github.com/matheovitali/Projet40K) contains graphics only, not the application source
+### Stained Glass
 
-### Stained Glass — VR/MR research project
-*Epitech team project*
+At Epitech, I worked with nine other students on a Rust VR/MR prototype for Meta Quest. My part focused on hand and wrist interactions with spatial interfaces.
 
-Contributed to a **Rust-based VR/MR prototype** for Meta Quest in a ten-person team, with a focus on hand/wrist interactions and spatial UI behavior.
+[About Stained Glass](projects/stained-glass.md)
 
-- Case study: **[Read the Stained Glass technical overview](projects/stained-glass.md)**
-- Project code and media are not published pending contributor and asset-rights review.
+## Experience
 
-## Professional background
+**AIR CLOUD, Microsoft ecosystem developer** (December 2022 to August 2025)
 
-**Microsoft ecosystem developer — AIR CLOUD** (Dec 2022 – Aug 2025)  
-Developed business tools and workflows using **Power Platform, SharePoint, Dataverse and Power Automate**, including CRM and operational-process solutions in a small delivery team.
+I developed CRM and operational tools using Power Platform, Power Automate, SharePoint and Dataverse, working in a small delivery team.
 
-**Education:** MSc in Artificial Intelligence — Epitech.
+**Education:** MSc in Artificial Intelligence, Epitech.
 
 ## Technologies
 
-- **Applications:** TypeScript, Vue, Nuxt, Flutter, Dart, C#, Unity
-- **Automation & business systems:** Power Platform, Power Automate, SharePoint, Dataverse
-- **Backend & data:** Firebase, Firestore, Python
-- **Systems & experimental work:** Rust, local AI tooling, Ollama
-- **Engineering workflow:** Git, GitHub Actions, automated testing, CI/CD
+- Web and mobile: TypeScript, Vue, Nuxt, Flutter, Dart
+- Business apps and automation: Power Platform, Power Automate, SharePoint, Dataverse
+- Backend and data: Firebase, Firestore, Python
+- Other work: C#, Unity, Rust, Ollama
+- Workflow: Git, GitHub Actions, CI/CD, automated testing
 
-## Earlier public projects
+I also have a couple of older public student projects: [My_defender](https://github.com/matheovitali/My_defender) (C/CSFML) and [site-bdd-pixellabs](https://github.com/matheovitali/site-bdd-pixellabs) (Flutter).
 
-- [My_defender](https://github.com/matheovitali/My_defender) — 2021 academic tower-defense project built with C and CSFML
-- [site-bdd-pixellabs](https://github.com/matheovitali/site-bdd-pixellabs) — 2021 Flutter project for CSV/data workflows with Firestore
-
-**About the repositories:** Some of my recent work is private because it involves collaborators, product code or security-sensitive architecture. Public documentation is intended to explain the engineering work without misrepresenting code ownership or sharing restricted material.
+Some recent code lives in private repositories because it belongs to team projects or is still being reviewed for publication.
