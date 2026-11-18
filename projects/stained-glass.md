@@ -1,40 +1,11 @@
-# Stained Glass — Rust VR/MR prototype
+# Stained Glass
 
-[← Back to GitHub profile](../README.md)
+[Back to my profile](../README.md)
 
-**Epitech team project · October 2024 – April 2025 · Source not public**
+Stained Glass was a VR/MR project developed at Epitech between October 2024 and April 2025. We worked in a team of ten on a Rust prototype for Meta Quest.
 
-## Overview
+The prototype explored movable 3D windows, navigation, selection and drag-and-drop in a spatial interface.
 
-Stained Glass was a **VR/MR research and development team project**, exploring how users can interact with spatial windows and interface elements in a Meta Quest headset.
+I mainly worked on hand and wrist interactions. The interesting challenge was connecting a gesture to the right interface element and giving the user understandable feedback in 3D space. The rest of the prototype, including the window system, was a team effort.
 
-The project was developed by a **team of ten**. My work focused on **hand/wrist interaction** within the prototype. This document describes a contribution to a team project, **not sole authorship of the application**.
-
-## Project scope
-
-The prototype explored:
-
-- Spatial **3D windows** and their manipulation
-- User movement and selection/click interactions
-- Drag-and-drop interactions in an immersive environment
-- Hand/wrist-based input and usability concerns
-
-The focus was on creating a usable interaction prototype rather than a commercially supported VR application.
-
-## Technology and responsibilities
-
-- **Rust** for the implementation
-- **Meta Quest** devices as the target VR/MR environment
-- Interaction concepts: spatial UI, hands/wrists, selection and manipulation
-
-### My contribution
-
-I worked on the **hand and wrist interaction layer**, where a key challenge is connecting spatial input with user expectations: a gesture needs to correspond to the intended UI target, and feedback needs to remain understandable in a 3D environment.
-
-The wider experience, including window systems and scene behavior, was a collaborative effort.
-
-## Publication and evidence
-
-There is **no public project repository, executable or demonstration linked here**. Before releasing footage, source files or screenshots, the team would need to establish contributor permissions and rights to any included assets.
-
-This case study is a high-level account of work completed during the academic project; it should not be read as an independently audited performance claim.
+There isn't a public repository or demo for this project. We would need to check contributor permissions and asset rights before publishing code or footage.
