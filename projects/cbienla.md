@@ -1,35 +1,23 @@
-# CBienLà — Web & mobile real-estate platform
+# CBienLà
 
-[← Back to my GitHub profile](../README.md) · [Visit CBienLà](https://cbienla.fr/)
+[Back to my profile](../README.md) · [Visit cbienla.fr](https://cbienla.fr/)
 
-**Real product · Team project · Private source code**
+CBienLà is a French real-estate platform that I'm building with four teammates. I co-founded the project in October 2025 and work on both the product and its technical implementation.
 
-CBienLà is a French real-estate platform available on the web and mobile. I contribute to its development as part of a team of five.
+My work spans the Nuxt/Vue frontend, the Flutter mobile app and Firebase services. That includes user-facing features, integrations, data workflows and deployment automation. The technologies I use here include TypeScript, Node.js, Firestore and Dart.
 
-## See the product
+It's a collaborative product, so this page focuses on the work I've contributed rather than presenting the whole platform as mine.
 
-**[Explore CBienLà on its official website](https://cbienla.fr/)**
+## Screenshots
 
-The official website is the best way to see the public product today.
+The screenshots below show the public-facing product.
 
-## Gallery
+### Home page
 
-### Homepage
+![CBienLà home page and property search](images/cbienla-accueil.png)
 
-![CBienLà homepage with the main property search interface](images/cbienla-accueil.png)
+### Property search
 
-### Property Search
+![Property search results and map](images/cbienla-recherche.png)
 
-![CBienLà property search results with listings and a map](images/cbienla-recherche.png)
-
-*Screenshots of the public-facing product, provided for portfolio illustration. They do not include the application's private source code or internal implementation.*
-
-## My role
-
-**Co-founder & Full-Stack Developer · Since October 2025**
-
-As part of a five-person team, I contribute to CBienLà's product development, including frontend features, mobile development, backend services and integrations.
-
-**Technologies:** TypeScript, Vue, Nuxt, Node.js, Firebase, Firestore, Flutter and Dart.
-
-This is a collaborative product. The source code remains private, and this overview describes my contribution without claiming sole authorship of the platform or disclosing private implementation details.
+You can explore the product at [cbienla.fr](https://cbienla.fr/). The application code is private.
